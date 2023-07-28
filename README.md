@@ -34,29 +34,29 @@ Get involved today, and together, let's empower individuals worldwide to build i
 ## what to expect:
  Version 1.0 Highlights:
 
--Intuitive and user-friendly interface for a seamless resume-building experience.
--A diverse range of customizable templates tailored to various industries and preferences.
--Smart autofill capabilities to save you time by importing data from LinkedIn or your existing resume.
--Real-time preview feature for visualizing your CV as you build it, ensuring it matches your expectations.
--Comprehensive sections for personal information, work experience, education, skills, and more.
--Export your resume in multiple formats (PDF, DOCX) or share it directly through a link.
+- Intuitive and user-friendly interface for a seamless resume-building experience.
+- A diverse range of customizable templates tailored to various industries and preferences.
+- Smart autofill capabilities to save you time by importing data from LinkedIn or your existing resume.
+- Real-time preview feature for visualizing your CV as you build it, ensuring it matches your expectations.
+- Comprehensive sections for personal information, work experience, education, skills, and more.
+- Export your resume in multiple formats (PDF, DOCX) or share it directly through a link.
 Join the CV-Builder revolution and unlock your potential today! 🌟
 
 ## Version 1.1:
 
--Enhanced template library with even more options for unique resume designs.
--Improved performance and responsiveness for a smoother user experience.
--Additional language support to cater to users worldwide.
+- Enhanced template library with even more options for unique resume designs.
+- Improved performance and responsiveness for a smoother user experience.
+- Additional language support to cater to users worldwide.
 
 ## Version 1.2:
 
--Integration with popular job portals, enabling seamless job applications directly from CV-Builder.
--Advanced analytics to track the performance of your CV and gain valuable insights.
+- Integration with popular job portals, enabling seamless job applications directly from CV-Builder.
+- Advanced analytics to track the performance of your CV and gain valuable insights.
 
 ## Version 1.3:
 
--Collaborative editing, allowing multiple users to work on a resume together in real-time.
--AI-powered content suggestions for personalized and impactful resume content.
+- Collaborative editing, allowing multiple users to work on a resume together in real-time.
+- AI-powered content suggestions for personalized and impactful resume content.
 
 
 We value your feedback and ideas! Feel free to suggest features or contribute to our project's development. Together, let's make CV-Builder the go-to tool for professionals worldwide.
