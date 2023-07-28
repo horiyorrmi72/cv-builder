@@ -29,7 +29,7 @@ We welcome contributions from developers, designers, and enthusiasts alike. Whet
 
 Get involved today, and together, let's empower individuals worldwide to build impressive resumes and take the next step in their careers. Let's make a positive impact on countless professional journeys.
 
-## 🌐 Visit us on GitHub: [github.com/horiyorrmi72]/CV-Builder
+## 🌐 Visit us on GitHub: [horiyorrmi72/CV-Builder](https://github.com/horiyorrmi72/cv-builder)
 
 ## what to expect:
  Version 1.0 Highlights:
