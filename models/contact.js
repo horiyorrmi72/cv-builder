@@ -5,6 +5,7 @@ const {Schema} = mongoose;
 const contactSchema = new Schema({
     user_id:{
         type:mongoose.Types.ObjectId,
+        ref:'User',
         required:true
     },
     phoneNumber:{

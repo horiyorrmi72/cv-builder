@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+*.env
+
+# Build artifacts
+build/
+dist/
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Dependency directories
+__pypackages__/
+pip-modules/
+
+# macOS
+.DS_Store
+
+# Log files
+logs/
+
+# Temporary files
+*.tmp
+
+# Ignore all .log files in the root and subdirectories
+*.log

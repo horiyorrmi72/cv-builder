@@ -31,7 +31,7 @@ const registerUser = async (req, res, next) => {
     await user.save();
 
     const token = generateAccessToken({
-      userId: user._id,
+      user_id: user._id,
       username: user.username,
       email: user.email,
     });
@@ -85,7 +85,7 @@ const authenticateUser = async (req, res) => {
 const refreshUserToken = async (req, res) => {
   try {
     const refreshedToken = req.headers.authorization.split(" ")[1];
-    console.log(req.headers)
+    console.log(req.headers);
     if (!refreshedToken) {
       return res.status(403).json({ message: "Refresh token not provided" });
     }
@@ -96,10 +96,7 @@ const refreshUserToken = async (req, res) => {
       return res.status(403).json({ status: 403, message: "User not found" });
     }
 
-    const accessToken = jwt.sign(
-      { userId: user._id },
-      { expiresIn: "1h" }
-    );
+    const accessToken = jwt.sign({ userId: user._id }, { expiresIn: "1h" });
 
     res.json({ accessToken });
   } catch (error) {
