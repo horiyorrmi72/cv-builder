@@ -1,0 +1,42 @@
+$bgcolor: blue
+$textcolor: darkblue
+$font-size: 18px
+$pic-link: url('/path-to-img')
+
+=background($imgpath, $position, $repeat)
+  background:
+    image: $imgpath
+    position: $position
+    repeat: $repeat
+
+.landing-section
+  +background($pic-link, center, no-repeat)
+  background-size: cover
+  color: rgb(0,0 ,0)
+  text-align: center
+  padding: 100px 0
+
+.landing-content
+  max-width: 800px
+  margin: 0 auto
+
+.landing-content h1
+  font-size: 2.5rem
+  margin-bottom: 20px
+
+.landing-content p
+  font-size: 1.1rem
+  margin-bottom: 30px
+
+.btn-start-building
+  display: inline-block
+  background-color: #3498db
+  color: #ffffff
+  padding: 12px 30px
+  border-radius: 5px
+  font-size: 1.2rem
+  text-decoration: none
+  transition: background-color 0.3s ease
+
+.btn-start-building:hover
+  background-color: #2980b9
