@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PreviewComponent } from './preview/preview.component';
 import { BioComponent } from './bio/bio.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { DatapageComponent } from './datapage/datapage.component';
 
 
 
@@ -21,14 +22,16 @@ import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
+  {path:'data', component:DatapageComponent},
   {path:"signup", component:SignupComponent},
   {path:"login", component:LoginComponent},
-  {path:'skill', component:SkillsComponent},
-  {path:'edu', component:EduComponent},
-  {path:'preview', component:SignupComponent},
-  {path:'bio', component:BioComponent},
-  {path:'experience', component:ExperienceComponent},
-  {path:'portfolio', component:PortfolioComponent}
+  // {path:'skill', component:SkillsComponent},
+  // {path:'edu', component:EduComponent},
+  // {path:'preview', component:SignupComponent},
+  // {path:'bio', component:BioComponent},
+  // {path:'experience', component:ExperienceComponent},
+  // {path:'portfolio', component:PortfolioComponent}
+
 ];
 
 @NgModule({
