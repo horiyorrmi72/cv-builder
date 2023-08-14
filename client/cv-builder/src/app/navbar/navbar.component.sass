@@ -1,50 +1,97 @@
-.header
-  display: flex
-  align-items: center
-  justify-content: space-between
-  padding: 20px
-  background-color: #beb0b0
-  color: #fff
+// .header
+//   display: flex
+//   align-items: center
+//   justify-content: space-between
+//   padding: 20px
+//   background-color: #beb0b0
+//   color: #fff
 
-.logo-container
-  img
-    max-width: 100px
+// .logo-container
+//   img
+//     max-width: 100px
 
-.navigator
-  nav
-    ul
-      list-style: none
-      display: flex
-      margin: 0
-      padding: 0
-      align-items: center
+// .navigator
+//   nav
+//     ul
+//       list-style: none
+//       display: flex
+//       margin: 0
+//       padding: 0
+//       align-items: center
 
-    li
-      margin: 0 10px
+//     li
+//       margin: 0 10px
+//       text-transform: uppercase
+
+//       a
+//         text-decoration: none
+//         color: #fff
+//         &:hover
+//           text-decoration: underline
+
+//         button
+//           background-color: #3498db
+//           color: #fff
+//           border: none
+//           padding: 8px 15px
+//           border-radius: 5px
+//           cursor: pointer
+//           transition: background-color 0.2s ease
+//           &:hover
+//             background-color: #2980b9
+
+//         &.cta-btn
+//           margin: 0
+//           padding: 0
+//           border: none
+//           background-color: transparent
+//           text-decoration: none
+//           &:hover
+//             background-color: transparent
+.nav
+  z-index: 1
+  // Import external stylesheets or libraries here if needed
+
+// Custom styling for the navigation
+nav
+  .nav-wrapper
+    // background-color: #333
+    
+    .brand-logo
+      img
+        height: 60px
+        width: 60px
+        padding: 10px
+        border-radius: 50% 
+    
+    .sidenav-trigger
+      color: white
+    
+    ul.right
+      li
+        a
+          color: white
+          text-transform: uppercase
+          font-weight: 500
+          padding: 0 10px
+          transition: color 0.3s ease-in-out
+          
+          &:hover
+            color: #ff6f00 // Change to your preferred hover color
+        
+        // .waves-effect
+        //   background-color: #ff6f00
+
+// Custom styling for the mobile menu
+ul.sidenav
+  li
+    a
+      // color: #333
       text-transform: uppercase
-
-      a
-        text-decoration: none
-        color: #fff
-        &:hover
-          text-decoration: underline
-
-        button
-          background-color: #3498db
-          color: #fff
-          border: none
-          padding: 8px 15px
-          border-radius: 5px
-          cursor: pointer
-          transition: background-color 0.2s ease
-          &:hover
-            background-color: #2980b9
-
-        &.cta-btn
-          margin: 0
-          padding: 0
-          border: none
-          background-color: transparent
-          text-decoration: none
-          &:hover
-            background-color: transparent
+      font-weight: 500
+      padding: 15px
+      border-bottom: 1px solid #ddd
+      transition: background-color 0.3s ease-in-out
+      
+      &:hover
+        // background-color: #f5f5f5 

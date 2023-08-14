@@ -1,4 +1,40 @@
-// $sections-margin-right:20px
-// $sections-padding:10px
+.container
+  max-width: 1200px
+  margin: 0 auto
 
+.steps-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 20px
 
+.steps-div
+  flex-basis: calc(33.33% - 20px)
+  margin-bottom: 20px
+
+.card
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+  transition: transform 0.3s
+  &:hover
+    transform: translateY(-5px)
+
+.card-content
+  padding: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+  
+.card-title.steps
+  font-size: 1.25rem
+  font-weight: bold
+
+.list-group
+  list-style: none
+  padding: 0
+  li
+    margin-bottom: 10px
+
+p
+  margin-top: 20px

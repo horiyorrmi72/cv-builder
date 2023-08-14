@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<div class="container">
+    <form [formGroup]="signupdata" (ngSubmit)="onSignUp()" class="align-items-center">
+        <div class="signdata row mb-3 ">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" formControlName="email" class="form-control form-control-sm">
+            <div *ngIf="signupdata.controls['email'].invalid && signupdata.controls['email'].touched" class="alert alert-danger">
+                <div *ngIf="signupdata.controls['email'].errors?.['required']">
+                    Email is required.
+                </div>
+                <div *ngIf="signupdata.controls['email'].errors?.['pattern']">
+                    Invalid email format.
+                </div>
+            </div>
+        </div>
+        <div class="signdata row mb-3">
+            <label for="username" class="col-sm-2 col-form-label">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username" formControlName="username" class="form-control form-control-sm">
+            <div *ngIf="signupdata.controls['username'].invalid && signupdata.controls['username'].touched" class="alert alert-danger">
+                Username is required.
+            </div>
+        </div>
+        <div class="signdata row mb-3">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" formControlName="password" class="form-control form-control-sm">
+            <div *ngIf="signupdata.controls['password'].invalid && signupdata.controls['password'].touched" class="alert alert-danger">
+                Password is required.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>

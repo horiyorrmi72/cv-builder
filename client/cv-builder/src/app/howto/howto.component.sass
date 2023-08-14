@@ -1,39 +1,38 @@
-$steps-bg-color: aliceblue
-
 .container
-    text-align: justify
-    padding: 20px
-h2
-    font-size: 1.8rem
-    margin-bottom: 20px
+    max-width: 100%
+    margin: 0 auto
 
-p
-    font-size: 1.1rem
-    margin-bottom: 20px
-
-.steps-container
+.row
     display: flex
     flex-wrap: wrap
-    justify-content: space-around
+    justify-content: center // Center the cards horizontally
 
-.steps-div
-    width: calc(30% - 20px)
-    background-color: #f0f0f0
-    border-radius: 5px
-    padding: 20px
-    margin-bottom: 20px
+.card
+    padding-right: 40px
+    padding-left: 0px
+    width: 300px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media (min-width: 992px)
+        height: 400px 
+        margin-right: 20px 
+        margin-bottom: 20px 
+
+.card-content
+    flex-grow: 1
 
 .steps
     font-size: 1.2rem
-    margin-bottom: 10px
-    text-align: center
+    font-weight: bold
+    margin-bottom: 1rem
 
-ul
-    padding-left: 20px
-    list-style-type: disc
+.list-group
+    padding-left: 1rem
+    li
+        margin-bottom: 0.5rem
+        font-size: 0.9rem
 
-ol
-    margin-bottom: 5px
-    
-p:last-child
-    margin-top: 20px
+.col
+    margin-bottom: 2rem
