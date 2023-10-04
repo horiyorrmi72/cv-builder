@@ -4,18 +4,25 @@ const messages = require("../utils/messages");
 const addSkill = async (req, res) => {
   try {
     const user_id = req.user._id;
-    const { skill_title, proficiency } = req.body;
-    if (!skill_title || !proficiency) {
+    const { skills_title, proficiency } = req.body;
+    if (!skills_title) {
       return res.json({
         status: 400,
-        message: messages.missingInputErrorMessage || "All fields required.",
+        message: "Your Skill Title field is required.",
       });
     }
-    let userSkills = await Skills.findOne({ user_id });
-    if (!userSkills) {
+    let userSkills = await Skills.findOne({ user_id, });
+    let existingSkills = await Skills.findOne({'skill.skills_title':skills_title});
+    if(existingSkills){
+      return res.json({
+        status: 400,
+        message: "This skill already exists",
+      });
+    }
+    if (!userSkills ) {
       userSkills = new Skills({ user_id, skill: [] });
     }
-    userSkills.skill.push({ skill_title, proficiency });
+    userSkills.skill.push({ skills_title, proficiency });
     await userSkills.save();
     return res.json({
       status: 200,
@@ -31,9 +38,9 @@ const addSkill = async (req, res) => {
 const updateSkill = async (req, res) => {
   try {
     const { id } = req.params;
-    const { skill_title, proficiency } = req.body;
+    const { skills_title, proficiency } = req.body;
 
-    if (!skill_title || !proficiency) {
+    if (!skills_title) {
       return res.json({
         status: 400,
         message: messages.missingInputErrorMessage,
@@ -42,9 +49,10 @@ const updateSkill = async (req, res) => {
 
     const skillToUpdate = await Skills.findOneAndUpdate(
       { _id: id },
-      { skill_title, proficiency },
+      { skills_title, proficiency },
       { new: true }
     );
+    console.log(`Skill found: ${skillToUpdate}`);
 
     if (!skillToUpdate) {
       return res.json({
