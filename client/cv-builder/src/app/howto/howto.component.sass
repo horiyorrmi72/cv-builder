@@ -1,11 +1,11 @@
 .container
-    max-width: 100%
+    width: 100%
     margin: 0 auto
+    display:flex
 
 .row
     display: flex
     flex-wrap: wrap
-    justify-content: center // Center the cards horizontally
 
 .card
     padding-right: 40px
@@ -36,3 +36,8 @@
 
 .col
     margin-bottom: 2rem
+
+div :nth-child(7),
+div :nth-child(9)
+    visibility: hidden
+    background-color:blue

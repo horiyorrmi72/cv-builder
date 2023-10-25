@@ -1,59 +1,44 @@
-// $container-width:calc(100% - 30px)
-// $container-padding:50px
-// $heding-text-size:2.5rem
-// $bottom-margin:10px
-// $text-size:1.1rem
-$text-color: #3498db
-// $shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-// .container
-//     // width: 100%
-//     max-width: $container-width
-//     margin: 0 auto
-//     padding: $container-padding
-//     text-align: center
-//     background-color: #f9f9f9
-//     border-radius: 10px
-//     box-shadow: $shadow
-// h1
-//     font-size: $heding-text-size
-//     margin-bottom: $bottom-margin
-
-// p
-//     font-size: $text-size
-//     line-height: 1.6
-//     margin-bottom: 20px
-
-// span
-//     font-weight: bold
-
-// p span
-//     color: $text-color
-
-
-// p + p
-//     margin-top: 30px
 :host
-  display: block
+  display:block
 
   .container
-    padding: 20px
+    display:flex
+    flex-direction:row
+    flex-wrap:wrap
+    width: 100%
 
     h1
       font-size: 2.5rem
       margin-bottom: 20px
 
-    .flow-text
+    .flow-header
       font-size: 1.25rem
       line-height: 1.6
 
     p
       margin: 10px 0
+      
 
-    span.flow-text
+    span.flow-header
       font-weight: bold
       color: black
 
     ::ng-deep
       .flow-text
         font-weight: bold
-        color: #1976d2
+    
+
+mat-card
+  margin:20px 0
+  width: 100%
+  display:inline-flex
+  flex-direction: column
+
+  mat-card-header
+    text-transform: uppercase
+    text-decoration: underline solid 3px
+
+  mat-card-content
+    width: 100%
+    font-weight:400
+    font-size:14px 
